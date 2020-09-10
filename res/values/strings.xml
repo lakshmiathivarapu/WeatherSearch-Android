@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WeatherSearchApp</string>
+    <string name="today">TODAY</string>
+    <string name="weekly">WEEKLY</string>
+    <string name="photos">PHOTOS</string>
+
+</resources>

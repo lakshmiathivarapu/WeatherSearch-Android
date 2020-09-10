@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/nav_tab"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">>
+
+        <ImageView
+            android:id="@+id/nav_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/nav_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="@android:color/black" />
+
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="606dp">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/windSpeed"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/weather_windy" />
+
+                    <TextView
+                        android:id="@+id/windSpeed_label"
+                        android:layout_width="127dp"
+                        android:layout_height="62dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/windSpeed_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Wind Speed"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/Pressure"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/pressureimageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/gauge" />
+
+                    <TextView
+                        android:id="@+id/pressure_label"
+                        android:layout_width="127dp"
+                        android:layout_height="62dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/pressure_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Pressure"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/precipitation"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/precipitationimageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/weather_pouring" />
+
+                    <TextView
+                        android:id="@+id/precipitation_label"
+                        android:layout_width="127dp"
+                        android:layout_height="62dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/precipitation_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Precipitation"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/temperature"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/temperatureimageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/thermometer" />
+
+                    <TextView
+                        android:id="@+id/temperature_label"
+                        android:layout_width="127dp"
+                        android:layout_height="62dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/temperature_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Temperature"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/summary"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/summaryimageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        app:srcCompat="@drawable/weather_sunny" />
+
+                    <TextView
+                        android:id="@+id/summary_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="93dp"
+                        android:shadowColor="#FFFFFF"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/humidity"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/humidityimageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/water_percent" />
+
+                    <TextView
+                        android:id="@+id/humidity_label"
+                        android:layout_width="127dp"
+                        android:layout_height="62dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/humidity_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Humidity"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="176dp"
+            android:layout_marginTop="20dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/visibility"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/visibilityimageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/eye_outline" />
+
+                    <TextView
+                        android:id="@+id/visibility_label"
+                        android:layout_width="127dp"
+                        android:layout_height="62dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/visibility_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Visibility"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cloudCover"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/cloudCoverimageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/weather_fog" />
+
+                    <TextView
+                        android:id="@+id/cloudCover_label"
+                        android:layout_width="127dp"
+                        android:layout_height="62dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/cloudCover_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Cloud Cover"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/ozone"
+                android:layout_width="117dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="15dp"
+                android:background="#232020"
+                app:cardBackgroundColor="#232020"
+                app:cardCornerRadius="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ozoneimageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        app:srcCompat="@drawable/earth" />
+
+                    <TextView
+                        android:id="@+id/ozone_label"
+                        android:layout_width="127dp"
+                        android:layout_height="62dp"
+                        android:text="TextView"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="22sp" />
+
+                    <TextView
+                        android:id="@+id/ozone_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:shadowColor="#FFFFFF"
+                        android:text="Ozone"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="18sp" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>
